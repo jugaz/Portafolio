@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Esta es mi Página Web"/>
+        <meta name="author" content="Marco De la cruz"/>
+        <meta name="keywords" content="Marco De la cruz, Portafolio, Frontend"/>
+        <meta property="og:title" content="Marco - Frontend Developer"/>
+        <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <script src="./index.js" defer></script>
+        <script async src="/navbar.js"></script>
+        <title>Marco - Frontend Developer</title>
+    </head>
+
+    <body>
+        <div class="contenedor">
+            <header id="cabecera" class="navbar">
+                <div class="logo">
+                    <a class="text-logo" href="index.html">
+                        M.D
+                    </a>
+                </div>
+                <ul class="menu-items">
+                    <li class="menulinks active" data-ref="home"><a href="#home">Inicio</a></li>
+                    <li class="menulinks" data-ref="about"><a href="#about">Sobre mí</a></li>
+                    <li class="menulinks" data-ref="portafolio"><a href="#portafolio">Portafolio</a></li>
+                    <li class="menulinks" data-ref="contacto"><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="btn-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </header>
+
+            <!-- Sección Imagen -->
+            <section id="home" class="home">
+                <div class="home_fondo"></div>
+                <picture>
+                    <source type="image/jpg" srcset="./img/perfil_lobo.jpg">
+                    <img class="img_perfil" alt="perfil">
+                </picture>
+                <div class="home_descripcion">
+                    <h1 class="home_titulo">Marco De la cruz</h1>
+                    <p class="home_ser">Frontend Developer</p>
+                </div>
+            </section>
+
+            <!-- Sección Sobre mi -->
+            <section id="about">
+                <div class="container">
+                    <h2 class="seccion_titulo">Sobre mí</h2>
+                    <div class="subcontainer">
+                        <div class="about_descripcion">
+                            <p class="saludo">Hola, ¡Mucho gusto!</p>
+                            <h2 class="yo">Soy Marco De la cruz, Desarrollador Frontend y apasionado de la tecnología.</h2>
+                            <p class="mi_info">Soy una persona autodidacta, constantemente tomando cursos para aprender nuevas tecnologías. Vivo en Lima-Perú, me gusta ver series y ejercitarme 🏃🏽‍♂️.</p>
+                            <div class="about_actual">
+                                <p style="color: rgb(43, 184, 218);">¿Que hago actualmente?</p>
+                                <p class="gnrl">Estoy cursando el último ciclo de la carrera "Computación e Informática".</p>
+                                <p class="gnrl">Trabajando en una aplicación en Flutter - Dart.</p>
+                                <p class="gnrl">Estoy estudiando y practicando JavaScript, PHP.</p>
+                            </div>
+                        </div>
+
+                        <div class="about_conocimiento">
+                            <div class="skills_titulo">
+                                <h2>Mis conocimientos:</h2>
+                            </div>
+                            <div class="skills_grid">
+                                <div class="skills_hab">
+                                    <i class="fab fa-html5"></i>
+                                    <div class="hab_nombre">HTML 5</div>
+                                </div>
+                                <div class="skills_hab">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <div class="hab_nombre">CSS3</div>
+                                </div>
+                                <div class="skills_hab">
+                                    <i class="fab fa-js"></i>
+                                    <div class="hab_nombre">JAVASCRIPT</div>
+                                </div>
+                                <div class="skills_hab">
+                                    <i class="fab fa-git-alt"></i>
+                                    <div class="hab_nombre">GIT</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Portafolio -->
+            <section id="portafolio">
+                <div class="container">
+                    <h2 class="seccion_titulo">Portafolio</h2>
+                    <div class="subcontainer_portafolio">
+                        <div class="portafolio_item">
+                            <img class="img_proyecto" src="img/homeimage.png" alt="proyecto">
+                        </div>
+                        <div class="portafolio_item">
+                            <img class="img_proyecto" src="img/homeimage.png" alt="proyecto">
+                        </div>
+                        <div class="portafolio_item">
+                            <img class="img_proyecto" src="img/homeimage.png" alt="proyecto">
+                        </div>
+                        <div class="portafolio_item">
+                            <img class="img_proyecto" src="img/homeimage.png" alt="proyecto">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+    
+            <!-- Pie de Página -->
+            <footer id="contacto">
+                <div class="container">
+                    <h2 class="seccion_titulo">Contáctame</h2>
+                    <br>
+                    <h3 class="subtitulo">Te invito a que estemos en contacto a través de mis redes sociales:</h3>
+                    <div class="redes_grid">
+                        <a href="https://www.linkedin.com/login/es" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/marco.de.la.cruz/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <br>
+                    <p class="copy">Copyright &copy; 2021. Marco De la cruz</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,397 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    font-family: "Space Mono", "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    color: #f5f5f5;
+    background-color: black;
+    height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.contenedor{
+    width: 100%;
+    background: transparent;
+}
+
+#about, #portafolio, #contacto{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container{
+    width: 100%;
+    display: inherit;
+    max-width: 1200px;
+    justify-content: inherit;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*---------------- Header - Cabecera ----------------*/
+#cabecera{
+    font-weight: bold;
+    position: fixed;
+    display: flex;
+    transition: background 0.3s;
+    background: transparent;
+    justify-content: space-between;
+    height: 65px;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo{
+    font-size: 28px;
+    margin-left: 25px;
+}
+
+.logo::before{
+    content: "<";
+    color: rgb(43, 184, 218);
+    font-weight: bold;
+}
+
+.logo::after{
+    content: "/>";
+    color: rgb(43, 184, 218);
+    font-weight: bold;
+}
+
+.text-logo{
+    color: #f5f5f5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text-logo:hover{
+    color: #8e8e8e;
+}
+
+.menu-items{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-right: 25px;
+}
+
+.menu-items li{
+    padding-right: 15px;
+}
+
+.menu-items li a{
+    display: block;
+    color: #8e8e8e;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-items li a:hover{
+    color: rgb(43, 184, 218);
+    transition: .5s;
+    border-bottom: 1px solid rgb(43, 184, 218);
+}
+
+.btn-menu{
+    padding-right: 25px;
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+ul.show {
+    top: 65px;
+}
+
+
+
+/*---------------- Sección - Home ----------------*/
+.home{
+    min-height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+    font-family: "Poppins", sans-serif;
+}
+
+.home_fondo{
+    background-color: #8e8e8e;
+    background-image: url(../img/homeimage2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.img_perfil{
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.home_titulo{
+    font-size: 60px;
+    text-shadow: 2px 2px black;
+    color: rgb(43, 184, 218);
+    margin: 10px 0;
+}
+
+.home_ser{
+    margin-top: 20px;
+    font-size: 45px;
+    color: #f5f5f5;
+    text-shadow: 2px 2px black;
+}
+
+/*---------------- Sección - Sobre mí ----------------*/
+.seccion_titulo{
+    color: #f5f5f5;
+    font-size: 35px;
+    margin: 30px 0;
+}
+
+.seccion_titulo::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 3px;
+    margin: 5px auto 10px;
+    background-color: rgb(43, 184, 218);
+    opacity: 0.5;
+}
+
+.subcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.about_descripcion{
+    text-align: left;
+    padding-right: 10px;
+}
+
+
+
+/* inicio texto */
+.saludo{
+    font-size: 22px;
+}
+.yo{
+    color: rgb(43, 184, 218);
+    margin: 15px 0;
+    font-size: 28px;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial;
+}
+
+.about_actual{
+    margin-top: 10px;
+    line-height: 40px;
+}
+
+.mi_info{
+    text-align: justify;
+}
+
+.gnrl::before{
+    content: "→";
+    padding-right: 5px;
+    color: rgb(43, 184, 218);
+}
+/* fin texto */
+
+
+
+.skills_titulo{
+    margin: 15px auto;
+}
+
+.skills_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skills_hab{
+    font-size: 50px;
+    padding: 35px;
+    min-width: 130px;
+    color: #8e8e8e;
+}
+
+.skills_hab:hover{
+    color: rgb(43, 184, 218);
+    transition: all .3s;
+}
+
+.hab_nombre{
+    font-size: 16px;
+    text-align: center;
+}
+
+/*---------------- Sección - Portafolio ----------------*/
+.subcontainer_portafolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.portafolio_item{
+    padding: 35px;
+}
+
+.img_proyecto{
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+
+/*---------------- Sección - Portafolio ----------------*/
+.redes_grid{
+    margin: 25px auto;
+    color: royalblue;
+    font-size: 50px;
+    list-style: none;
+}
+
+.redes_grid a{
+    margin: auto 10px;
+    text-decoration: none;
+    color: royalblue;
+}
+
+.redes_grid a:hover{
+    color: rgb(43, 184, 218);
+}
+
+.copy{
+    color: #8e8e8e;
+    font-size: 14px;
+}
+
+.subtitulo, .copy{
+    font-family: "Space Mono", "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+}
+
+
+
+
+
+/*------------ Configuración Media ------------*/
+
+@media screen and (max-width: 991px){
+    /* Generales*/
+    #about, #portafolio, #piedepagina{
+        padding: 75px 0;
+    }
+
+    
+    /* Sección Home */
+    .home{
+        flex-direction: column;
+    }
+    .img_perfil{
+        height: 250px;
+        margin-bottom: 25px;
+        margin-right: 0;
+        
+    }
+    .home_titulo{
+        font-size: 45px;
+    }
+    .home_ser{
+        font-size: 35px;
+    }
+
+
+    /* Sección Acerca de mí */
+    .subcontainer{
+        grid-template-columns: 1fr;
+    }
+    .about_descripcion{
+        padding-right: 0px;
+    }
+    .mi_info{
+        text-align: left;
+    }
+    .skills_titulo{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 858px){
+    .btn-menu{
+        display: inline-flex;
+    }
+    .menu-items{
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.97);
+        top: -120vh;
+        text-align: center;
+        transition: all .8s;
+    }
+    .menu-items li {
+        margin: 50px 0 0 0;
+        line-height: 35px;
+        padding: 0;
+    }
+    .menu-items li a{
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* General */
+    #about, #portafolio, #piedepagina{
+        padding: 55px 0;
+    }
+
+
+    /* Sección Home */
+    .home_titulo{
+        font-size: 35px;
+    }
+    .home_ser{
+        font-size: 25px;
+    }
+
+
+    /* Sección Acerca de mi */
+    .saludo{
+    font-size: 20px;
+    }
+    .yo{
+    margin: 15px 0;
+    font-size: 26px;
+    }
+
+    /* Sección Portafolio */
+    .subcontainer_portafolio{
+        grid-template-columns: 1fr;
+    }
+
+    /* Sección Contacto */
+    .subtitulo{
+        font-size: 16px;
+    }
+}
+
